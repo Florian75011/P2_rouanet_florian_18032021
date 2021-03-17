@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<!--Les données de la page comprenant titre, icône, mots clés et invocation CSS-->
+	<meta charset="utf-8">
+	<title>Reservia - Bienvenue sur notre site d'hébergement, réalisez les vacances de vos rêves</title>
+	<link rel="shortcut icon" href="images/logo/Reservia.svg" type="image/favicon" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<meta name="keywords" content="hotels, voyages, locations, activités" />
+	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+</head>
+
+<body>
+	<!--L'en-tête de la page comprenant titres, navbar et filtres-->
+	<header>
+		<div class="logo-container">
+			<a href="#" title="Retour à la page d'accueil">
+				<img src="images/logo/Reservia.svg" alt="Reservia, logo, titre">
+			</a>
+		</div>
+
+		<!--A mettre du côté droit / Hébergements Activités S'inscrire /-->
+		<nav>
+			<ul>
+				<li>
+					<a href="#hebergements" title="Liste de nos hébergements liés à votre recherche">Hébergements</a>
+				</li>
+				<li>
+					<a href="#activities" title="Liste de nos activités liées à votre recherche">Activités</a>
+				</li>
+			</ul>
+		</nav>
+		<button title="Devenez membre afin de réserver et de personnaliser vos recherches"
+			class="sign-up-button">S'inscrire</button>
+	</header>
+
+	<main>
+		<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+		<p>En plein centre ville ou en pleine nature</p>
+
+		<!--Insérer le bouton de recherche "Marseille, France"-->
+		<div class="search-bar">
+			<span>icone</span>
+			<input type="text" />
+			<button>bouton</button>
+		</div>
+
+		<!--Insertion des filtres-->
+		<div class='filters-list'>
+			<p><strong>Filtres</strong></p>
+			<div class='filter rounded'>
+				<span class='bg-blue-2'>
+					<i class="fas fa-money-bill-wave"></i>
+				</span>
+				<p>Économique</p>
+			</div>
+			<div class='filter rounded'>
+				<span>icone</span>
+				<p>Familial</p>
+			</div>
+			<div class='filter rounded'>
+				<span>icone</span>
+				<p>Romantique</p>
+			</div>
+			<div class='filter rounded'>
+				<span><i class="fas fa-dog"></i></span>
+				<p>Animaux autorisés</p>
+			</div>
+		</div>
+		<p>Plus de 500 logements disponibles dans cette ville</p>
+
+
+		<section>
+			<!--Placer ce menu sur la gauche, gérer le width-->
+			<article class='bg-grey rounded'>
+				<h2 id="hebergements">Hébergements à Marseille</h2>
+
+				<!--Intégrer 6 images sur 2 lignes avec tags et tailles-->
+				<div class='rounded'>
+					<img role="img" aria-hidden="true"
+						src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel, Marseille"
+						height="118px" width="auto">
+					<h3>Auberge La Cannebière</h3>
+					<p>Nuit à partir de <strong>25€</strong></p>
+				</div>
+
+				<img role="img" aria-hidden="true"
+					src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel, Marseille"
+					height="118px" width="auto">
+				<h3>Hôtel du port</h3>
+				<p>Nuit à partir de <strong>23€</strong></p>
+
+				<img role="img" aria-hidden="true" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+					alt="hotel, Marseille" height="118px" width="auto">
+				<h3>Hôtel Les mouettes</h3>
+				<p>Nuit à partir de <strong>96€</strong></p>
+
+				<img role="img" aria-hidden="true"
+					src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel, Marseille"
+					height="118px" width="auto">
+				<h3>Hôtel de la mer</h3>
+				<p>Nuit à partir de <strong>52€</strong></p>
+
+				<img role="img" aria-hidden="true" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+					alt="hotel, Marseille" height="118px" width="auto">
+				<h3>Auberge Le Panier</h3>
+				<p>Nuit à partir de <strong>76€</strong></p>
+
+				<img role="img" aria-hidden="true"
+					src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel, Marseille"
+					height="118px" width="auto">
+				<h3>Hôtel chez Amina</h3>
+				<p>Nuit à partir de <strong>46€</strong></p>
+
+				<p>Afficher plus</p>
+			</article>
+
+			<aside class='bg-grey rounded'>
+				<!--Placer ce menu sur la droite (petit icône, 3 colonnes verticales)-->
+				<h2>Les plus populaires</h2>
+
+				<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="hotel, populaire"
+					height="118px" width="auto">
+				<h3>Hôtel Le soleil du matin</h3>
+				<p>Nuit à partir de <strong>128€</strong></p>
+
+				<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="hotel, populaire"
+					height="118px" width="auto">
+				<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+				<p>Nuit à partir de <strong>71€</strong></p>
+
+				<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="hotel, populaire"
+					height="118px" width="auto">
+				<h3>Hôtel Tout bleu et Blanc</h3>
+				<p>Nuit à partir de <strong>68€</strong></p>
+
+			</aside>
+		</section>
+
+		<article>
+			<!--Un menu comprenant 6 activités/images-->
+			<h2 id="activities">Activités à Marseille</h2>
+
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Vieux Port</h3>
+
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Fort de Pomègues</h3>
+
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Îles du Frioul</h3>
+
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Parc National des Calanques</h3>
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Notre-Dame-de-la-Garde</h3>
+
+			<img role="img" aria-hidden="true" src="//via.placeholder.com/650x350" alt="lieux, activités, Marseille"
+				height="118px" width="auto">
+			<h3>Parc Longchamp</h3>
+
+		</article>
+	</main>
+
+	<footer class="bg-grey">
+
+		<!--Liste à puce en supprimant le point, la première ligne en gras, flexbox space-around-->
+		<landmark>
+			<section>
+				<h2>À propos</h2>
+				<p>Fonctionnement du site<br>
+					Conditions générales de vente<br>
+					Données et confidentialité</p>
+			</section>
+
+			<section>
+				<h2>Nos hébergements</h2>
+				<p>Charte qualité<br>
+					Soummetre votre hôtel</p>
+			</section>
+
+			<section>
+				<h2>Assistance</h2>
+				<p>Centre d'aide<br>
+					Nous contacter</p>
+			</section>
+		</landmark>
+	</footer>
+
+</body>
+
+</html>
+
+<!--Une retranscription rapide de la maquette sur feuille de papier a été faite au préalable-->
+<!--Cette page de Reservia (https://ccr-g.github.io/OC_2-Turn_mock-ups_into_a_web_page/index.html#) a été examinée à de multiples reprises-->
+<!--Le code a été versionné de multiples fois en local sur la branche "master" via Git et VS Code-->
+<!--Le code a été testé et corrigé via le validator WC3-->
+<!--Le dépôt local du projet 2 d'OpenClassrooms à été "pushé" sur GitHub une fois réalisé-->
+
+<!--Le code a été testé et corrigé via le validator WC3-->
