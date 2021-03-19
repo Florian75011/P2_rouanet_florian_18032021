@@ -1,13 +1,10 @@
+/* 1) Classes applicables à de nombreux éléments. */
+
+
 /* Ajout de la police d'écriture du site : Roleway */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Les propriétés de tout le body */
-body {
-    margin: 0;
-    font-family: "Raleway", "Sans serif";
-}
-
-/* Les classes pour les trois couleurs du site */
+/* Les classes pour obtenir les trois couleurs du site */
 .bg-blue-1 {
     background-color: #0065FC;
 }
@@ -20,19 +17,51 @@ body {
     background-color: #F2F2F2;
 }
 
-/* Class pour arondir tous les articles, filtres et fonds d'articles */
+/* Une classe pour arondir tous les articles, filtres et fonds d'articles */
 .rounded {
     border-radius: 30px;
 }
+
+
+/* 2) Gestion du corps du texte (titres, paragraphes) */
+
+
+/* Les propriétés de tout le body (cadrage et police d'écriture) */
+body {
+    margin: 0;
+    font-family: "Raleway", "Sans serif";
+}
+
+/* Désactive les puces de la liste pour la navbar */
+ul {
+    list-style: none;
+}
+
+/* Taille des titres */
+h1 {
+    font-size: 1.9em;
+}
+
+/* La mise en gras des titres un peu "moins importants" */
+h2,
+h3 {
+    font-weight: bold;
+}
+
+/* Gestion de la forme des paragraphes */
+p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+
+/* 3) Les éléments en haut de page */
+
 
 /* Les propriétés de la barre de recherche et du bouton */
 .search-bar {
     border-radius: 20px;
     margin-bottom: 40px;
-}
-
-.search-bar span {
-
 }
 
 .search-bar a {
@@ -48,7 +77,6 @@ i {
 }
 
 /* Gérer les filtres entre icones (Font Awesome), textes et barres */
-
 .filters-list {
     display: flex;
     flex-direction: row;
@@ -57,11 +85,11 @@ i {
 .filter {
     display: flex;
     align-items: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
     cursor: pointer;
     box-shadow: inset 0 0 0 2px #f2f2f2;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    margin-left: 20px;
-    margin-bottom: 50px;
 }
 
 .filter:hover {
@@ -82,14 +110,15 @@ i {
     padding: 0 20px 0 15px;
 }
 
-/* A propos de la petite ligne informative */
-.infor {
+/* À propos de la petite ligne informative */
+.information {
     display: flex;
     flex-direction: row;
 }
 
 /* La largeur maximale de la page est fixée (excepté pour le footer) */
-header, main {
+header,
+main {
     margin: 0 auto;
     max-width: 1340px;
 }
@@ -101,7 +130,7 @@ header {
     flex-wrap: wrap;
 }
 
-    /* Aligne et cadre la navbar */
+/* Aligne et cadre la navbar */
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -111,6 +140,8 @@ header nav ul {
 }
 
 header nav li a {
+    color: inherit;
+    text-decoration: none;
     border-top: 3px solid rgba(255, 255, 255, 0);
     display: block;
     padding: 48px 0;
@@ -125,6 +156,7 @@ header nav li a:hover {
     border-top: 3px solid #0065FC;
 }
 
+/* La gestion du bouton "S'inscrire" */
 header button {
     color: #0065FC;
     background-color: unset;
@@ -148,54 +180,78 @@ header .logo-container {
     padding-left: 20px;
 }
 
-/* Désactiver les puces de la liste pour la navbar */
-ul {
-    list-style: none;
+
+/* 4) Gestion des articles principaux du centre de la page (avec images) */
+
+
+section img {
+    height: 118px;
+    width: auto;
 }
 
-/* Titres et paragraphes */
-h1 {
-    color: #0065FC;
+.results-accommodation {
+    line-height: 1.15;
 }
 
-/* La mise en gras des titres un peu "moins importants" */
-h2, h3 {
+.title-most-popular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.results-most-popular {
+    line-height: 1.15;
+}
+
+.results-activities {
+    line-height: 18.4px
+}
+
+/* Forme du bouton "afficher plus" */
+.show-more {
+    color: inherit;
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Gestion de la forme des paragraphes */
-p {
-    font-size: 1.1em;
-    text-align: justify;
+.show-more:hover {
+    text-decoration: underline;
 }
 
-/* Le footer est mis sur une même ligne */
+
+/* 5) Gestion du bas de page */
+
+
+/* Le placement, la taille d'écriture et l'espacement du footer */
 footer {
-    padding: 50px;
+    padding: 30px;
+    font-size: 1em;
+    line-height: 1.8;
 }
 
+/* Les 3 sections du footer sont mis sur une même ligne */
 .footer-list {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Le haut de chaque section est plus gros et en gras */
+.footer-title {
+    font-weight: bold;
     font-size: 1.3em;
 }
 
+/* 6) Responsive adapté aux écrans d'ordinateurs, de tablettes et de mobiles
+@media (max-width: 1199px) {
 
-/* a:hover
-{
-   text-decoration: underline;
-   color: blue;
 }
 
-<div id="conteneur">
-    <div class="element 1">Element </div>
-    <div class="element 2">Element </div>
-    <div class="element 3">Element </div>
-</div>
+@media (max-width: 991px) {
 
-Responsive adapté aux ordinateurs, tablettes et mobiles :
-Très petits écrans (< 768 px : les écrans dont la largeur est comprise entre 0px et 768 px
-Tablettes (768 px - 991 px)
-Ordinateurs (992 px - 1199 px) */
+}
+
+@media (max-width: 768px) {
+
+} */
