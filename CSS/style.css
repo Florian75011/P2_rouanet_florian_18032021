@@ -1,7 +1,13 @@
 /* Ajout de la police d'écriture du site : Roleway */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
-/* Les classes pour les trois couleurs du background */
+/* Les propriétés de tout le body */
+body {
+    margin: 0;
+    font-family: "Raleway", "Sans serif";
+}
+
+/* Les classes pour les trois couleurs du site */
 .bg-blue-1 {
     background-color: #0065FC;
 }
@@ -19,12 +25,17 @@
     border-radius: 30px;
 }
 
-/* Les propriétés de la barre de recherche */
+/* Les propriétés de la barre de recherche et du bouton */
 .search-bar {
     border-radius: 20px;
+    margin-bottom: 40px;
 }
 
-a {
+.search-bar span {
+
+}
+
+.search-bar a {
     text-decoration: none;
 }
 
@@ -36,7 +47,7 @@ i {
     color: #0065FC;
 }
 
-/* Gérer les filtres entre icones, textes et barres */
+/* Gérer les filtres entre icones (Font Awesome), textes et barres */
 
 .filters-list {
     display: flex;
@@ -49,6 +60,8 @@ i {
     cursor: pointer;
     box-shadow: inset 0 0 0 2px #f2f2f2;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    margin-left: 20px;
+    margin-bottom: 50px;
 }
 
 .filter:hover {
@@ -69,10 +82,10 @@ i {
     padding: 0 20px 0 15px;
 }
 
-/* Les propriétés de tout le body (police d'écriture) */
-body {
-    margin: 0;
-    font-family: "Raleway", "Sans serif";
+/* A propos de la petite ligne informative */
+.infor {
+    display: flex;
+    flex-direction: row;
 }
 
 /* La largeur maximale de la page est fixée (excepté pour le footer) */
@@ -88,7 +101,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* Aligne et cadre la navbar */
+    /* Aligne et cadre la navbar */
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -155,3 +168,34 @@ p {
     font-size: 1.1em;
     text-align: justify;
 }
+
+/* Le footer est mis sur une même ligne */
+footer {
+    padding: 50px;
+}
+
+.footer-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+
+/* a:hover
+{
+   text-decoration: underline;
+   color: blue;
+}
+
+<div id="conteneur">
+    <div class="element 1">Element </div>
+    <div class="element 2">Element </div>
+    <div class="element 3">Element </div>
+</div>
+
+Responsive adapté aux ordinateurs, tablettes et mobiles :
+Très petits écrans (< 768 px : les écrans dont la largeur est comprise entre 0px et 768 px
+Tablettes (768 px - 991 px)
+Ordinateurs (992 px - 1199 px) */
