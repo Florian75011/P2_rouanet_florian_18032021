@@ -18,7 +18,9 @@
 }
 
 /* Une classe pour arondir tous les articles, filtres et fonds d'articles */
-.rounded {
+.rounded,
+.result,
+.results-activities div {
     border-radius: 30px;
 }
 
@@ -48,6 +50,11 @@ h3 {
     font-weight: bold;
 }
 
+.result a:hover h3 {
+    text-decoration: underline;
+    text-decoration-color: #0065FC;
+}
+
 /* Gestion de la forme des paragraphes */
 p {
     font-size: 1.1em;
@@ -74,6 +81,10 @@ a:visited {
 
 i {
     color: #0065FC;
+}
+
+i.fa-star.inactive {
+    color: #F2F2F2;
 }
 
 /* Gérer les filtres entre icones (Font Awesome), textes et barres */
@@ -184,27 +195,51 @@ header .logo-container {
 /* 4) Gestion des articles principaux du centre de la page (avec images) */
 
 
+/* Un traitement pour la taille des images  */
 section img {
     height: 118px;
     width: auto;
 }
 
+/* La partie A) avec "les hébergements" */
+/* Activation d'une grille divisée en trois */
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+/* La grille "hébergement" prend deux colonnes  */
+.city-accommodations {
+    grid-column: span 2;
+    padding: 20px 41px;
+}
+
+/* Placement de chaque image-article et espacement */
 .results-accommodation {
+    display: grid;
+    grid-gap: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
     line-height: 1.15;
 }
 
-.title-most-popular {
+/* La couleur de fond entoure chaque résultat & cache ce qui dépasse */
+div.result {
+    border: solid white 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Les liens s'appliquent dans chaque espace */
+.result a {
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
 }
 
-.results-most-popular {
-    line-height: 1.15;
-}
-
-.results-activities {
-    line-height: 18.4px
+.result-text {
+    margin: 0px 10px 12px 10px;
 }
 
 /* Forme du bouton "afficher plus" */
@@ -217,6 +252,42 @@ section img {
 .show-more:hover {
     text-decoration: underline;
 }
+
+/* La partie B) avec les plus populaires */
+.most-popular-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 41px;
+}
+
+/* L'affichage des images diffèrent, elles se retrouvent à gauche */
+.most-popular-container .result img {
+    max-width: 40%;
+    min-height: 160px;
+}
+
+/* Gestion du haut du cadre avec titre et logo */
+.most-popular-container .result a {
+    flex-direction: row;
+}
+
+.most-popular-container h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.most-popular-container h2 i {
+    color: black;
+}
+
+.most-popular-container h2 i:hover {
+    color: gray;
+}
+
+/* La partie C) avec la grille d'activité */
+
 
 
 /* 5) Gestion du bas de page */
