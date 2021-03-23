@@ -24,6 +24,11 @@
     border-radius: 30px;
 }
 
+/* Les liens visités de changent pas de couleur */
+a:visited {
+    color: inherit;
+}
+
 
 /* 2) Gestion du corps du texte (titres, paragraphes) */
 
@@ -65,26 +70,66 @@ p {
 /* 3) Les éléments en haut de page */
 
 
-/* Les propriétés de la barre de recherche et du bouton */
+/* Les propriétés de la touche itinéraire, de la barre de recherche et du bouton */
 .search-bar {
-    border-radius: 20px;
+    margin: 15px 0 31px;
+    box-shadow: inset 0 0 0 1px #f2f2f2;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.search-bar span {
+    min-width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.search-bar span:hover {
+    background-color: grey;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.search-bar i {
+    color: black;
+}
+
+.search-bar input {
+    min-width: 160px;
+    border: none;
+    padding: 17px;
+    color: black;
+    font-weight: bold;
+    outline-offset: -2px;
+    overflow: visible;
+}
+
+.search-bar button {
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    min-width: 50px;
+    padding: 19px;
+    font-weight: bold;
+    overflow: visible;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.search-bar button:hover {
+    background-color: blue;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .search-bar a {
     text-decoration: none;
-}
-
-a:visited {
-    color: inherit;
-}
-
-i {
-    color: #0065FC;
-}
-
-i.fa-star.inactive {
-    color: #F2F2F2;
 }
 
 /* Gérer les filtres entre icones (Font Awesome), textes et barres */
@@ -109,6 +154,10 @@ i.fa-star.inactive {
     text-decoration-color: #0065FC;
 }
 
+.filter:active {
+    color: #F2F2F2;
+  }
+
 .filter span {
     width: 15px;
     height: 15px;
@@ -127,6 +176,19 @@ i.fa-star.inactive {
 .information {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.information i {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #f2f2f2;
+    border-radius: 30px;
+    padding: 9px;
+    width: 17px;
+    height: 17px;
 }
 
 /* La largeur maximale de la page est fixée (excepté pour le footer) */
@@ -288,6 +350,16 @@ div.result {
     color: gray;
 }
 
+/* Gestions des étoiles */
+
+i {
+    color: #0065FC;
+}
+
+i.fa-star.inactive {
+    color: #F2F2F2;
+}
+
 /* La partie C) avec la grille d'activité */
 .results-activities {
     grid-column: span 3;
@@ -352,10 +424,6 @@ div.result {
     text-decoration-color: #0065FC;
 }
 
-/*  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px; */
-
 
 /* 5) Gestion du pied de page */
 
@@ -381,6 +449,12 @@ footer {
     font-weight: bold;
     font-size: 1.3em;
 }
+
+/* Désactionvation du surlignement des liens */
+footer a {
+    text-decoration: none;
+}
+
 
 /* 6) Responsive adapté aux écrans d'ordinateurs, de tablettes et de mobiles
 @media (max-width: 1199px) {

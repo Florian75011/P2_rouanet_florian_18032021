@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="images/logo/Reservia.svg" type="image/favicon" />
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-	<meta name="keywords" content="hotels, voyages, locations, activités" />
+	<meta name="keywords" content="hotels, voyages, vacances, locations, activités" />
 	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
 </head>
 
@@ -40,12 +40,12 @@
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre ville ou en pleine nature</p>
 
-		<!--Insertion du bouton de recherche-->
+		<!--Insertion de la barre de recherche et de l'identification-->
 		<div class="search-bar">
 			<span>
 				<i class="fas fa-map-marker-alt"></i>
 			</span>
-			<input type="search" name="ville" value="Marseille, France" />
+			<input type="search" name="ville" placeholder="Marseille, France" />
 			<span class="button">
 				<button type="submit">Rechercher</button>
 			</span>
@@ -82,7 +82,7 @@
 
 		<!--Caractéristiques de la ligne d'informations-->
 		<span class="information">
-			<i class="fas fa-info-circle"></i>Plus de 500 logements disponibles dans cette ville
+			<i class="fas fa-info"></i>Plus de 500 logements disponibles dans cette ville
 		</span>
 		<br><br>
 
@@ -290,7 +290,7 @@
 				<!--Le menu comprenant la grille des 6 activités/Articles-->
 				<h2 id="activities">Activités à Marseille</h2>
 
-				<div class="results-activities-article"> 
+				<div class="results-activities-article">
 					<div class="results-activities-highlighted">
 						<a href="#">
 							<img aria-hidden="true"
@@ -299,47 +299,48 @@
 							<h3>Vieux Port</h3>
 						</a>
 					</div>
-						<div class="results-activities-others">
-							<a href="#">
-								<img aria-hidden="true" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-									alt="lieux, activités, Marseille">
-								<h3>Fort de Pomègues</h3>
-							</a>
-						</div>
-					
-						<div class="results-activities-highlighted">
-							<a href="#">
-								<img aria-hidden="true" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-									alt="lieux, activités, Marseille">
-								<h3>Îles du Frioul</h3>
-							</a>
-						</div>
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Fort de Pomègues</h3>
+						</a>
+					</div>
 
-						<div class="results-activities-others">
-								<a href="#">
-									<img aria-hidden="true" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-										alt="lieux, activités, Marseille">
-									<h3>Parc National des Calanques</h3>
-								</a>
-						</div>
+					<div class="results-activities-highlighted">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Îles du Frioul</h3>
+						</a>
+					</div>
 
-						<div class="results-activities-others">
-							<a href="#">
-								<img aria-hidden="true" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-									alt="lieux, activités, Marseille">
-								<h3>Notre-Dame-de-la-Garde</h3>
-							</a>
-						</div>
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Parc National des Calanques</h3>
+						</a>
+					</div>
 
-						<div class="results-activities-others">
-							<a href="#">
-								<img aria-hidden="true" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-									alt="lieux, activités, Marseille">
-								<h3>Parc Longchamp</h3>
-							</a>
-						</div>
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Notre-Dame-de-la-Garde</h3>
+						</a>
+					</div>
+
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Parc Longchamp</h3>
+						</a>
+					</div>
 				</div>
-			</div>
 			</article>
 		</section>
 	</main>
@@ -350,17 +351,17 @@
 		<article>
 			<div class='footer-list'>
 				<p><span class="footer-title">À propos</span><br><br>
-					Fonctionnement du site<br>
-					Conditions générales de vente<br>
-					Données et confidentialité</p>
+					<a href="#">Fonctionnement du site</a><br>
+					<a href="#">Conditions générales de vente</a><br>
+					<a href="#">Données et confidentialité</a></p>
 
 				<p><span class="footer-title">Nos hébergements</span><br><br>
-					Charte qualité<br>
-					Soummetre votre hôtel</p>
+					<a href="#">Charte qualité</a><br>
+					<a href="#">Soummetre votre hôtel</a></p>
 
 				<p><span class="footer-title">Assistance</span><br><br>
-					Centre d'aide<br>
-					Nous contacter</p>
+					<a href="#">Centre d'aide</a><br>
+					<a href="#">Nous contacter</a></p>
 			</div>
 		</article>
 	</footer>
