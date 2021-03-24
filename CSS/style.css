@@ -53,6 +53,7 @@ h1 {
 h2,
 h3 {
     font-weight: bold;
+    color: black;
 }
 
 .result a:hover h3 {
@@ -64,6 +65,7 @@ h3 {
 p {
     font-size: 1.1em;
     text-align: justify;
+    color: black;
 }
 
 
@@ -156,7 +158,7 @@ p {
 
 .filter:active {
     color: #F2F2F2;
-  }
+}
 
 .filter span {
     width: 15px;
@@ -260,7 +262,7 @@ header .logo-container {
 
 
 /* Un traitement pour la taille des images  */
-section img {
+article img {
     height: 118px;
     width: auto;
 }
@@ -360,6 +362,16 @@ i.fa-star.inactive {
     color: #F2F2F2;
 }
 
+/* Eviter le warning W3C en donnant un titre de section/article invisible */
+section h4 {
+    display: none;
+}
+
+article h4 {
+    display: none;
+    /* visibility: hidden; */
+}
+
 /* La partie C) avec la grille d'activité */
 .results-activities {
     grid-column: span 3;
@@ -450,21 +462,93 @@ footer {
     font-size: 1.3em;
 }
 
-/* Désactionvation du surlignement des liens */
+/* Désactionvation du surlignement des liens (précision de la couleur noire pour Chrome) */
 footer a {
     text-decoration: none;
+    color: black;
 }
 
 
-/* 6) Responsive adapté aux écrans d'ordinateurs, de tablettes et de mobiles
-@media (max-width: 1199px) {
+/* 6) Responsive adapté aux écrans d'ordinateurs, de tablettes et de mobiles */
 
+
+/* Affichage pour les tablettes avec grille sur deux + redimension */
+@media (max-width: 900px) {
+    section {
+        width: auto;
+        float: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: auto;
+        float: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        margin: auto;
+        padding: 0 2rem;
+    }
+
+    body {
+        font-size: 1em;
+    }
 }
 
-@media (max-width: 991px) {
+/* Affichage pour les mobiles avec toutes les sections mises sur un étage + redimension */
+@media (max-width: 600px) {
+    .results-container {
+        grid-template-columns: 1fr;
+        display: block;
+        display: flex;
+        flex-direction: center;
+    }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: center;
+    }
+
+    article {
+        display: block;
+    }
+
+    aside {
+        margin-top: 20px;
+        display: block;
+        float: left;
+    }
+
+    .filters-list {
+        width: auto;
+        display: flex;
+    }
+
+    footer {
+        background-color: #F2F2F2;
+        display: flex;
+        margin: auto;
+    }
+    
+    .footer-list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 30px;
+    }
+
+    body, p {
+        font-size: 1em;
+    }
 }
-
-@media (max-width: 768px) {
-
-} */
