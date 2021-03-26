@@ -293,7 +293,6 @@ article img {
 div.result {
     border: solid white 5px;
     overflow: hidden;
-    background-color: white;
 }
 
 /* Les liens s'appliquent dans chaque espace */
@@ -473,7 +472,20 @@ footer a {
 
 
 /* Affichage pour les tablettes avec grille sur deux + redimension */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
+    .filter {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
     section {
         width: auto;
         float: left;
@@ -497,49 +509,7 @@ footer a {
     body {
         font-size: 1em;
     }
-}
 
-/* Affichage pour les mobiles avec toutes les sections mises sur un étage + redimension */
-@media (max-width: 600px) {
-    .results-container {
-        grid-template-columns: 1fr;
-        display: block;
-        display: flex;
-        flex-direction: center;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-    }
-
-    section {
-        display: flex;
-        flex-direction: center;
-    }
-
-    article {
-        display: block;
-    }
-
-    aside {
-        margin-top: 20px;
-        display: block;
-        float: left;
-    }
-
-    .filters-list {
-        width: auto;
-        display: flex;
-    }
-
-    footer {
-        background-color: #F2F2F2;
-        display: flex;
-        margin: auto;
-    }
-    
     .footer-list {
         padding: 20px;
         display: flex;
@@ -548,7 +518,51 @@ footer a {
         padding: 30px;
     }
 
-    body, p {
+    .information {
+        margin: 40px;
+    }
+}
+
+/* Affichage pour les mobiles avec toutes les sections mises sur un étage + redimension */
+@media (max-width: 650px) {
+    .filters-list {
+        width: auto;
+        margin: auto;
+    }
+
+    .filter {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information {
+        margin: 40px;
+    }
+
+    .results-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    footer {
+        background-color: #F2F2F2;
+        display: flex;
+        margin: auto;
+    }
+
+    .footer-list {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        padding: 30px;
+    }
+
+    body,
+    p {
         font-size: 1em;
     }
 }
