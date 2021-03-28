@@ -15,25 +15,51 @@
 <body>
 	<!--L'en-tête de la page comprenant titres, navbar et filtres-->
 	<header>
-		<div class="logo-container">
-			<a href="#" title="Retour à la page d'accueil">
-				<img src="images/logo/Reservia.svg" alt="Reservia, logo, titre">
-			</a>
+		<div class="header">
+			<div class="logo-container">
+				<a href="#" title="Retour à la page d'accueil">
+					<img src="images/logo/Reservia.svg" alt="Reservia, logo, titre">
+				</a>
+			</div>
+	
+			<!--A mettre du côté droit / Hébergements Activités S'inscrire /-->
+			<nav>
+				<ul>
+					<li>
+						<a href="#hebergements" title="Liste de nos hébergements liés à votre recherche">Hébergements</a>
+					</li>
+					<li>
+						<a href="#activities" title="Liste de nos activités liées à votre recherche">Activités</a>
+					</li>
+				</ul>
+			</nav>
+			<button title="Devenez membre afin de réserver et de personnaliser vos recherches"
+				class="sign-up-button">S'inscrire</button>
 		</div>
 
-		<!--A mettre du côté droit / Hébergements Activités S'inscrire /-->
-		<nav>
-			<ul>
-				<li>
-					<a href="#hebergements" title="Liste de nos hébergements liés à votre recherche">Hébergements</a>
-				</li>
-				<li>
-					<a href="#activities" title="Liste de nos activités liées à votre recherche">Activités</a>
-				</li>
-			</ul>
-		</nav>
-		<button title="Devenez membre afin de réserver et de personnaliser vos recherches"
-			class="sign-up-button">S'inscrire</button>
+		<div class="mobile-header">
+			<div class="logo-button">
+				<div class="logo-container">
+					<a href="#" title="Retour à la page d'accueil">
+						<img src="images/logo/Reservia.svg" alt="Reservia, logo, titre">
+					</a>
+				</div>
+				<button title="Devenez membre afin de réserver et de personnaliser vos recherches"
+				class="sign-up-button">S'inscrire</button>
+			</div>
+
+			<!--A mettre du côté droit / Hébergements Activités S'inscrire /-->
+			<nav>
+				<div class="nav-links">
+					<div class="nav-link">
+						<a href="#hebergements" title="Liste de nos hébergements liés à votre recherche">Hébergements</a>
+					</div>
+					<div class="nav-link">
+						<a href="#activities" title="Liste de nos activités liées à votre recherche">Activités</a>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</header>
 
 	<main>
@@ -56,29 +82,31 @@
 		<!--Insertion des 4 filtres-->
 		<div class='filters-list'>
 			<p><strong>Filtres</strong></p>
-			<div class='filter rounded'>
-				<span class='bg-blue-2'>
-					<i class="fas fa-money-bill-wave"></i>
-				</span>
-				<p>Économique</p>
-			</div>
-			<div class='filter rounded'>
-				<span class='bg-blue-2'>
-					<i class="fas fa-child"></i>
-				</span>
-				<p>Familial</p>
-			</div>
-			<div class='filter rounded'>
-				<span class='bg-blue-2'>
-					<i class="fas fa-heart"></i>
-				</span>
-				<p>Romantique</p>
-			</div>
-			<div class='filter rounded'>
-				<span class='bg-blue-2'>
-					<i class="fas fa-dog"></i>
-				</span>
-				<p>Animaux autorisés</p>
+			<div class="filters-container">
+				<div class='filter rounded'>
+					<span class='bg-blue-2'>
+						<i class="fas fa-money-bill-wave"></i>
+					</span>
+					<p>Économique</p>
+				</div>
+				<div class='filter rounded'>
+					<span class='bg-blue-2'>
+						<i class="fas fa-child"></i>
+					</span>
+					<p>Familial</p>
+				</div>
+				<div class='filter rounded'>
+					<span class='bg-blue-2'>
+						<i class="fas fa-heart"></i>
+					</span>
+					<p>Romantique</p>
+				</div>
+				<div class='filter rounded'>
+					<span class='bg-blue-2'>
+						<i class="fas fa-dog"></i>
+					</span>
+					<p>Animaux autorisés</p>
+				</div>
 			</div>
 		</div>
 
