@@ -566,20 +566,6 @@ footer a {
         padding: 7px;
     }
 
-    .search-bar button {
-        background-color: #0065fc;
-        color: white;
-        cursor: pointer;
-        min-width: 50px;
-        padding: 19px;
-        font-weight: bold;
-        overflow: visible;
-        font-size: 100%;
-        line-height: 1.15;
-        margin: 0;
-        border: none;
-    }
-
     .results-container {
         display: flex;
         flex-direction: column;
@@ -658,7 +644,7 @@ footer a {
         text-align: center;
     }
 
-    .nav-link a:hover {
+    .nav-links a:hover {
         border-bottom: 3px solid #0065FC;
     }
 }
