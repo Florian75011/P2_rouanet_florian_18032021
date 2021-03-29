@@ -162,7 +162,7 @@ p {
 
 .filter:hover {
     background-color: #DEEBFF;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: #0065FC;
 }
 
@@ -551,20 +551,52 @@ footer a {
         margin: auto;
     }
 
-    .filter {
-        margin-left: 10px;
-        margin-bottom: 10px;
-        display: flex;
+    .information {
+        margin: 30px;
     }
 
-    .information {
-        margin: 40px;
+    .search-bar {
+        width: 340px;
+        margin-bottom: 20px;
+    }
+
+    .search-bar input {
+        height: 100%;
+        min-width: 121px;
+        padding: 7px;
+    }
+
+    .search-bar button {
+        background-color: #0065fc;
+        color: white;
+        cursor: pointer;
+        min-width: 50px;
+        padding: 19px;
+        font-weight: bold;
+        overflow: visible;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+        border: none;
     }
 
     .results-container {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+    }
+
+    .results-activities-article img {
+        object-fit: cover;
+        height: 84%;
+        border-style: none;
+    }
+
+    .results-activities-height img {
+        height: 88%;
+    }
+
+    .results-activities-max-height img {
+        height: 91%;
     }
 
     footer {
