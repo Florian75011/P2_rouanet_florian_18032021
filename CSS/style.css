@@ -17,6 +17,14 @@
     background-color: #F2F2F2;
 }
 
+.mobile-search {
+    display: none;
+}
+
+.desktop-search {
+    display: block;
+}
+
 /* Une classe pour arondir tous les articles, filtres et fonds d'articles */
 .rounded,
 .result,
@@ -393,6 +401,10 @@ article h4 {
     /* visibility: hidden; */
 }
 
+section.mobile-only {
+    display: none;
+}
+
 /* La partie C) avec la grille d'activité */
 .results-activities {
     grid-column: span 3;
@@ -489,6 +501,9 @@ footer a {
     color: black;
 }
 
+.results-most-popular .result {
+    max-height: 160px;
+}
 
 /* 6) Responsive adapté aux écrans d'ordinateurs, de tablettes et de mobiles */
 
@@ -566,7 +581,7 @@ footer a {
         padding: 7px;
     }
 
-    .results-container {
+    section.mobile-only.results-container {
         display: flex;
         flex-direction: column;
     }
@@ -575,6 +590,7 @@ footer a {
         object-fit: cover;
         height: 84%;
         border-style: none;
+        max-height: 350px;
     }
 
     .results-activities-height img {
@@ -646,5 +662,22 @@ footer a {
 
     .nav-links a:hover {
         border-bottom: 3px solid #0065FC;
+    }
+
+    section.desktop-only {
+        display: none;
+    }
+
+    .desktop-search {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+        width: 100%;
+    }
+
+    .search-bar .mobile-search i {
+        color: white;
     }
 }

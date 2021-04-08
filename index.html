@@ -78,7 +78,10 @@
 				<input type="search" name="ville" placeholder="Marseille, France" />
 			</label>
 			<span class="button">
-				<button type="submit">Rechercher</button>
+				<button class="desktop-search" type="submit">Rechercher</button>
+				<button class="mobile-search" type="submit">
+					<i class="fas fa-search"></i>
+				</button>
 			</span>
 		</div>
 
@@ -119,7 +122,7 @@
 		</span>
 		<br><br>
 
-		<section class="results-container">
+		<section class="results-container desktop-only">
 			<h4>title-inactive</h4>
 			<!--Placement du menu sur la gauche, gérer le width-->
 			<article class='bg-grey rounded city-accommodations'>
@@ -319,6 +322,265 @@
 					</div>
 				</div>
 			</aside>
+
+			<article class="results-activities">
+				<!--Le menu comprenant la grille des 6 activités/Articles-->
+				<h2 id="activities">Activités à Marseille</h2>
+
+				<div class="results-activities-article">
+					<div class="results-activities-highlighted results-activities-height">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Vieux Port</h3>
+						</a>
+					</div>
+					<div class="results-activities-others results-activities-max-height">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Fort de Pomègues</h3>
+						</a>
+					</div>
+
+					<div class="results-activities-highlighted">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Îles du Frioul</h3>
+						</a>
+					</div>
+
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Parc National des Calanques</h3>
+						</a>
+					</div>
+
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Notre-Dame-de-la-Garde</h3>
+						</a>
+					</div>
+
+					<div class="results-activities-others">
+						<a href="#">
+							<img aria-hidden="true" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+								alt="lieux, activités, Marseille">
+							<h3>Parc Longchamp</h3>
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section class="results-container mobile-only">
+			<h4>title-inactive</h4>
+			<!--Placement du menu sur la gauche, gérer le width-->
+
+			<aside class='bg-grey rounded most-popular-container'>
+				<!--Placer le menu "les plus populaires" sur la droite (petit icône, 3 colonnes verticales)-->
+				<h2>Les plus populaires <a href="#"><i class="fas fa-chart-line" aria-hidden="true"></i></a></h2>
+
+				<div class="results-most-popular results-accommodation">
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+								alt="hotel, populaire">
+
+							<div class="result-text">
+								<h3>Hôtel Le soleil du matin</h3>
+								<p>Nuit à partir de <strong>128€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i><br>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+								alt="hotel, populaire">
+
+							<div class="result-text">
+								<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+								<p>Nuit à partir de <strong>71€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i><br>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+								alt="hotel, populaire">
+							<div class="result-text">
+								<h3>Hôtel Tout bleu et Blanc</h3>
+								<p>Nuit à partir de <strong>68€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i><br>
+								</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</aside>
+			<article class='bg-grey rounded city-accommodations'>
+				<h2 id="hebergements">Hébergements à Marseille</h2>
+
+				<!--Intégrer 6 images sur 2 lignes avec tags et tailles adaptées (liens inactifs à ce stade)-->
+				<div class="results-accommodation">
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Auberge La Cannebière</h3>
+								<p>Nuit à partir de <strong>25€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Hôtel du port</h3>
+								<p>Nuit à partir de <strong>23€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Hôtel Les mouettes</h3>
+								<p>Nuit à partir de <strong>96€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Hôtel de la mer</h3>
+								<p>Nuit à partir de <strong>52€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Auberge Le Panier</h3>
+								<p>Nuit à partir de <strong>76€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star inactive"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="result">
+						<a href="#">
+							<img aria-hidden="true"
+								src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+								alt="hotel, Marseille">
+
+							<div class="result-text">
+								<h3>Hôtel chez Amina</h3>
+								<p>Nuit à partir de <strong>46€</strong></p>
+								<span class="rating">
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+									<i aria-hidden="true" class="fas fa-star active"></i>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<a href="#" title="Afficher tous les résultats d'hébergement de votre recherche"
+						class="show-more">Afficher plus</a>
+				</div>
+			</article>
 
 			<article class="results-activities">
 				<!--Le menu comprenant la grille des 6 activités/Articles-->
